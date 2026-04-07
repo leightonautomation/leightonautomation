@@ -30,7 +30,7 @@ header{
 }
 
 .logo img{
-  height:120px;
+  height:80px;
 }
 
 .btn{
@@ -40,11 +40,16 @@ header{
   color:white;
   text-decoration:none;
   font-weight:600;
+  display:inline-block;
+}
+
+.btn:hover{
+  background:#1e40af;
 }
 
 .hero{
   text-align:center;
-  padding:120px 20px;
+  padding:100px 20px;
 }
 
 .hero h1{
@@ -55,8 +60,46 @@ header{
 .hero p{
   color:#4b5563;
   font-size:18px;
+  margin-bottom:30px;
 }
 
+/* Lead Magnet Section */
+.lead-magnet{
+  display:flex;
+  align-items:center;
+  gap:40px;
+  padding:80px 20px;
+}
+
+.lead-magnet img{
+  width:100%;
+  max-width:450px;
+  border-radius:10px;
+}
+
+.lead-form{
+  background:#f9fafb;
+  padding:30px;
+  border-radius:10px;
+  border:1px solid #e5e7eb;
+  width:100%;
+}
+
+.lead-form input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:6px;
+  border:1px solid #d1d5db;
+}
+
+.lead-form button{
+  width:100%;
+  border:none;
+  cursor:pointer;
+}
+
+/* Sections */
 .section{
   padding:80px 20px;
 }
@@ -75,11 +118,6 @@ header{
   padding:25px;
   border-radius:10px;
   border:1px solid #e5e7eb;
-}
-
-.highlight{
-  color:#2563eb;
-  font-weight:600;
 }
 
 .cta{
@@ -115,6 +153,28 @@ footer{
   </div>
 </section>
 
+<!-- Lead Magnet Section -->
+<section class="lead-magnet container">
+  
+  <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="Automation Dashboard">
+
+  <div class="lead-form">
+    <h2>Free Lead Follow-Up Automation Checklist</h2>
+    <p>Enter your email to get the exact system we use to convert more leads automatically.</p>
+    
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <button class="btn" type="submit">Send Me The Checklist</button>
+    </form>
+
+    <p style="font-size:12px;color:#6b7280;margin-top:10px;">
+      No spam. Unsubscribe anytime.
+    </p>
+  </div>
+
+</section>
+
 <section class="section">
   <div class="container grid grid-3">
     <div class="card">
@@ -136,9 +196,15 @@ footer{
   <div class="container">
     <h2>What We Do</h2>
     <div class="grid grid-3" style="margin-top:30px;">
-      <div class="card"><span class="highlight">Instant Lead Response</span><br>Reply in seconds</div>
-      <div class="card"><span class="highlight">Automated Follow-Up</span><br>Never miss a lead</div>
-      <div class="card"><span class="highlight">Booking Automation</span><br>Turn leads into calls</div>
+      <div class="card">
+        <span style="color:#2563eb;font-weight:600;">Instant Lead Response</span><br>Reply in seconds
+      </div>
+      <div class="card">
+        <span style="color:#2563eb;font-weight:600;">Automated Follow-Up</span><br>Never miss a lead
+      </div>
+      <div class="card">
+        <span style="color:#2563eb;font-weight:600;">Booking Automation</span><br>Turn leads into calls
+      </div>
     </div>
   </div>
 </section>
@@ -163,6 +229,14 @@ footer{
 <footer>
   © 2026 Leighton Automation LLC
 </footer>
+
+<script>
+function handleSubmit(e){
+  e.preventDefault();
+  alert("Thanks! Your checklist is on the way (this can be connected to email automation next).");
+  // Later we can connect this to email tools like Mailchimp / Zapier
+}
+</script>
 
 </body>
 </html>
