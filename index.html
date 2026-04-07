@@ -14,6 +14,7 @@ body{
   font-family:'Inter',sans-serif;
   background:#ffffff;
   color:#111827;
+  scroll-behavior:smooth;
 }
 
 .container{
@@ -27,10 +28,25 @@ header{
   justify-content:space-between;
   align-items:center;
   padding:20px;
+  position:sticky;
+  top:0;
+  background:white;
+  border-bottom:1px solid #e5e7eb;
 }
 
 .logo img{
-  height:80px;
+  height:100px; /* slightly bigger */
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#111827;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:#2563eb;
 }
 
 .btn{
@@ -63,7 +79,7 @@ header{
   margin-bottom:30px;
 }
 
-/* Lead Magnet Section */
+/* Lead Magnet */
 .lead-magnet{
   display:flex;
   align-items:center;
@@ -93,12 +109,6 @@ header{
   border:1px solid #d1d5db;
 }
 
-.lead-form button{
-  width:100%;
-  border:none;
-  cursor:pointer;
-}
-
 /* Sections */
 .section{
   padding:80px 20px;
@@ -120,6 +130,26 @@ header{
   border:1px solid #e5e7eb;
 }
 
+/* Pricing */
+.pricing{
+  text-align:center;
+}
+
+.price-card{
+  background:#f9fafb;
+  padding:30px;
+  border-radius:10px;
+  border:1px solid #e5e7eb;
+}
+
+.price{
+  font-size:32px;
+  font-weight:700;
+  margin:20px 0;
+  color:#2563eb;
+}
+
+/* CTA */
 .cta{
   text-align:center;
   padding:80px 20px;
@@ -142,24 +172,33 @@ footer{
   <div class="logo">
     <img src="logo.png" alt="Leighton Automation">
   </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#billing">Billing</a>
+  </nav>
+
   <a href="https://calendly.com/kylel-leightonautomation/30min" class="btn">Book Call</a>
 </header>
 
-<section class="hero">
+<!-- HERO -->
+<section id="home" class="hero">
   <div class="container">
-    <h1>Stop Losing Leads. Start Closing More Deals.</h1>
-    <p>We build automated follow-up systems that respond instantly and turn your leads into paying customers.</p>
+    <h1>Stop Losing Leads. Start Automating Your Business.</h1>
+    <p>We help small service businesses capture leads, follow up instantly, and automate key workflows to increase revenue and efficiency.</p>
     <a href="https://calendly.com/kylel-leightonautomation/30min" class="btn">Book Your Free Audit</a>
   </div>
 </section>
 
-<!-- Lead Magnet Section -->
+<!-- LEAD MAGNET -->
 <section class="lead-magnet container">
   
-  <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="Automation Dashboard">
+  <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="Automation">
 
   <div class="lead-form">
-    <h2>Free Lead Follow-Up Automation Checklist</h2>
+    <h2>Free Lead Follow-Up Checklist</h2>
     <p>Enter your email to get the exact system we use to convert more leads automatically.</p>
     
     <form onsubmit="handleSubmit(event)">
@@ -175,54 +214,85 @@ footer{
 
 </section>
 
+<!-- PROBLEMS -->
 <section class="section">
   <div class="container grid grid-3">
-    <div class="card">
-      <h3>Slow Response</h3>
-      <p>Leads go cold within minutes.</p>
-    </div>
-    <div class="card">
-      <h3>Missed Opportunities</h3>
-      <p>Calls and messages slip through the cracks.</p>
-    </div>
-    <div class="card">
-      <h3>Manual Work</h3>
-      <p>Following up takes too much time.</p>
-    </div>
+    <div class="card"><h3>Slow Response</h3><p>Leads go cold within minutes.</p></div>
+    <div class="card"><h3>Missed Opportunities</h3><p>Leads slip through the cracks.</p></div>
+    <div class="card"><h3>Manual Work</h3><p>Too much repetitive effort.</p></div>
   </div>
 </section>
 
+<!-- SERVICES -->
 <section class="section">
+  <div class="container grid grid-3">
+    <div class="card"><strong style="color:#2563eb;">Lead Automation</strong><br>Instant response & follow-up</div>
+    <div class="card"><strong style="color:#2563eb;">Workflow Automation</strong><br>Onboarding & internal systems</div>
+    <div class="card"><strong style="color:#2563eb;">Integrations</strong><br>Connect your tools together</div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section pricing">
   <div class="container">
-    <h2>What We Do</h2>
+    <h2>Pricing</h2>
     <div class="grid grid-3" style="margin-top:30px;">
-      <div class="card">
-        <span style="color:#2563eb;font-weight:600;">Instant Lead Response</span><br>Reply in seconds
+      
+      <div class="price-card">
+        <h3>Starter</h3>
+        <div class="price">$500+</div>
+        <p>Basic lead follow-up automation</p>
       </div>
-      <div class="card">
-        <span style="color:#2563eb;font-weight:600;">Automated Follow-Up</span><br>Never miss a lead
+
+      <div class="price-card">
+        <h3>Growth</h3>
+        <div class="price">$1,500+</div>
+        <p>Lead + booking + follow-up systems</p>
       </div>
-      <div class="card">
-        <span style="color:#2563eb;font-weight:600;">Booking Automation</span><br>Turn leads into calls
+
+      <div class="price-card">
+        <h3>Full System</h3>
+        <div class="price">$3,000+</div>
+        <p>End-to-end workflow automation</p>
       </div>
+
     </div>
   </div>
 </section>
 
-<section class="section">
+<!-- ABOUT -->
+<section id="about" class="section">
   <div class="container">
-    <h2>How It Works</h2>
-    <div class="grid grid-3" style="margin-top:30px;">
-      <div class="card">1. We audit your lead flow</div>
-      <div class="card">2. We build your system</div>
-      <div class="card">3. You close more deals</div>
+    <h2>About Us</h2>
+    <p style="margin-top:20px; color:#4b5563; max-width:800px;">
+      Leighton Automation helps small service businesses implement automation systems that improve lead response, streamline operations, and reduce manual workload.
+      Our focus is on building practical, results-driven systems that integrate into your existing tools and processes.
+    </p>
+  </div>
+</section>
+
+<!-- BILLING -->
+<section id="billing" class="section">
+  <div class="container">
+    <h2>Billing & Payments</h2>
+    <p style="margin-top:20px; color:#4b5563;">
+      This section will connect to your payment processor (such as Stripe).
+    </p>
+
+    <p style="margin-top:10px;">
+      👉 Placeholder for payment integration (Stripe Checkout / Payment Links)
+    </p>
+
+    <div style="margin-top:20px;">
+      <a href="#" class="btn">Pay / Subscribe (Coming Soon)</a>
     </div>
   </div>
 </section>
 
+<!-- CTA -->
 <section class="cta">
-  <h2>Ready to Capture Every Lead?</h2>
-  <p>Book a free audit and we’ll show you exactly where you're losing money.</p>
+  <h2>Ready to Automate Your Business?</h2>
+  <p>Book a free audit and we’ll identify opportunities to improve your systems.</p>
   <a href="https://calendly.com/kylel-leightonautomation/30min" class="btn">Book Your Call</a>
 </section>
 
@@ -233,8 +303,7 @@ footer{
 <script>
 function handleSubmit(e){
   e.preventDefault();
-  alert("Thanks! Your checklist is on the way (this can be connected to email automation next).");
-  // Later we can connect this to email tools like Mailchimp / Zapier
+  alert("Thanks! Next step is to connect this form to email automation.");
 }
 </script>
 
