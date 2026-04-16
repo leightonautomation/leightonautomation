@@ -160,11 +160,10 @@ footer {
 <!-- HERO -->
 <section class="hero container fade">
     <img src="logo.png" alt="Leighton Automation Logo" style="max-width:160px;margin-bottom:25px;">
-    <h1>Stop Losing Roofing Jobs to Missed Calls</h1>
-    <p>We automatically respond to every missed call and follow up with every lead — turning more inquiries into booked jobs without you lifting a finger.</p>
+    <h1>Stop Losing $8,000 Roofing Jobs to Missed Calls</h1>
+    <p>Every missed call is a potential job. We instantly respond, capture the lead, and follow up automatically until they book — so you never lose another opportunity.</p>
 
-    <a href="PASTE STRIPE LINK HERE" class="cta cta-primary">Get More Jobs Now</a>
-    <a href="#calendar" class="cta cta-secondary">Book a Demo</a>
+    <a href="#calendar" class="cta cta-primary">See How It Works</a>
 </section>
 
 <!-- PROBLEM -->
@@ -176,12 +175,12 @@ footer {
             <p>Every missed call is a job going to your competitor.</p>
         </div>
         <div class="card">
-            <h3>Slow Follow-Up Kills Deals</h3>
-            <p>If you don’t respond instantly, someone else will.</p>
+            <h3>Speed Wins Jobs</h3>
+            <p>The first roofer to respond usually gets the job.</p>
         </div>
         <div class="card">
-            <h3>Leads Slip Through the Cracks</h3>
-            <p>Manual systems fail. Opportunities get forgotten.</p>
+            <h3>Leads Get Forgotten</h3>
+            <p>Without follow-up, most leads never turn into paying customers.</p>
         </div>
     </div>
 </section>
@@ -192,11 +191,11 @@ footer {
     <div class="grid three">
         <div class="card">
             <h3>Instant Text Back</h3>
-            <p>Every missed call gets an immediate response.</p>
+            <p>The moment you miss a call, a text is sent instantly and the lead is captured.</p>
         </div>
         <div class="card">
             <h3>Automated Follow-Up</h3>
-            <p>We nurture leads until they book.</p>
+            <p>Your system follows up automatically until the lead books — no more missed opportunities.</p>
         </div>
     </div>
 </section>
@@ -204,9 +203,9 @@ footer {
 <!-- ROI -->
 <section class="container fade">
     <div class="roi">
-        If you miss 10 calls per week and close just 1 extra job at $1,000…<br><br>
-        <strong>That’s $4,000/month recovered.</strong><br><br>
-        This system pays for itself — fast.
+        If you miss 10 calls per week and close just 1 extra job at $8,000…<br><br>
+        <strong>That’s $32,000/month recovered.</strong><br><br>
+        Most roofing companies only need 1 extra job to pay for this system.
     </div>
 </section>
 
@@ -229,21 +228,43 @@ footer {
     </div>
 </section>
 
+<!-- TRUST -->
+<section class="container fade">
+    <h2>Why Roofing Companies Choose Us</h2>
+    <div class="grid three">
+        <div class="card">
+            <h3>Built for Roofers</h3>
+            <p>This system is designed specifically for roofing companies.</p>
+        </div>
+        <div class="card">
+            <h3>Done-For-You Setup</h3>
+            <p>We handle everything so you don’t have to.</p>
+        </div>
+        <div class="card">
+            <h3>No Contracts</h3>
+            <p>Stay because it works — not because you're locked in.</p>
+        </div>
+    </div>
+</section>
+
 <!-- OFFER -->
 <section class="container offer fade">
     <h2>Simple Pricing</h2>
     <p class="price">$497 Setup</p>
     <p class="price">$497 / Month</p>
+    <p><strong>Pays for itself with just 1 job.</strong></p>
     <p>Cancel anytime. No contracts.</p>
     <p>100% Done-For-You Setup.</p>
-
-    <a href="PASTE STRIPE LINK HERE" class="cta cta-primary">Start Now</a>
 </section>
 
 <!-- CALENDAR -->
 <section id="calendar" class="container fade" style="text-align:center;">
     <h2>See How Many Jobs You're Losing</h2>
     <p>Book a quick demo and we’ll show you exactly how this works for your roofing business.</p>
+
+    <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-secondary" target="_blank">
+        Book Your Demo
+    </a>
 
     <div style="min-width:320px;height:700px;">
         <iframe src="https://calendly.com/kylel-leightonautomation/30min" 
@@ -254,23 +275,27 @@ footer {
 <!-- FINAL CTA -->
 <section class="container offer fade">
     <h2>Every Missed Call Is Lost Revenue</h2>
-    <a href="PASTE STRIPE LINK HERE" class="cta cta-primary">Start Getting More Jobs Today</a>
+    <p>If you're missing calls, you're losing jobs — it's that simple.</p>
+    <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-primary" target="_blank">
+        Start Getting More Jobs Today
+    </a>
 </section>
 
 <!-- FOOTER -->
 <footer>
     <p>Leighton Automation LLC</p>
-    <p>KyleL@leightonautomation.com</p>
+    <p>kyleL@leightonautomation.com</p>
 </footer>
 
 <script>
-// SMOOTH SCROLL
+// SAFE SMOOTH SCROLL
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
     });
 });
 
