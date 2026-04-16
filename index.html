@@ -3,318 +3,295 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leighton Automation</title>
+<title>Leighton Automation LLC</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-
-body{
-  font-family:'Inter',sans-serif;
-  background:#ffffff;
-  color:#111827;
-  scroll-behavior:smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
+body {
+    background: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
 }
 
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px;
-  position:sticky;
-  top:0;
-  background:white;
-  border-bottom:1px solid #e5e7eb;
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.logo img{
-  height:150px;
+section {
+    padding: 80px 0;
 }
 
-nav a{
-  margin-left:20px;
-  text-decoration:none;
-  color:#111827;
-  font-weight:500;
+h1, h2, h3 {
+    margin-bottom: 20px;
 }
 
-nav a:hover{
-  color:#1e3a8a;
+p {
+    color: #cbd5f5;
 }
 
-/* UPDATED DARKER BLUE */
-.btn{
-  background:#1e3a8a;
-  padding:12px 24px;
-  border-radius:6px;
-  color:white;
-  text-decoration:none;
-  font-weight:600;
-  display:inline-block;
+/* HERO */
+.hero {
+    text-align: center;
+    padding-top: 100px;
 }
 
-.btn:hover{
-  background:#172554;
+.hero h1 {
+    font-size: 2.5rem;
 }
 
-.btn-green{
-  background:#166534;
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
-.btn-green:hover{
-  background:#14532d;
+.cta {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-.hero{
-  text-align:center;
-  padding:80px 20px;
+.cta-primary {
+    background: #22c55e;
+    color: #000;
 }
 
-.hero h1{
-  font-size:48px;
-  margin-bottom:20px;
+.cta-primary:hover {
+    background: #16a34a;
 }
 
-.hero p{
-  color:#4b5563;
-  font-size:18px;
-  margin-bottom:30px;
+.cta-secondary {
+    border: 1px solid #475569;
+    color: #f1f5f9;
 }
 
-.lead-magnet{
-  display:flex;
-  align-items:center;
-  gap:40px;
-  padding:20px;
-  margin:0;
+.cta-secondary:hover {
+    background: #1e293b;
 }
 
-.lead-magnet img{
-  width:100%;
-  max-width:450px;
-  border-radius:10px;
-  display:block;
-  margin:0;
+/* SECTIONS */
+.grid {
+    display: grid;
+    gap: 30px;
 }
 
-.lead-form{
-  background:#f9fafb;
-  padding:30px;
-  border-radius:10px;
-  border:1px solid #e5e7eb;
-  width:100%;
+.three {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.lead-form input{
-  width:100%;
-  padding:12px;
-  margin-bottom:15px;
-  border-radius:6px;
-  border:1px solid #d1d5db;
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-.section{
-  padding:50px 20px;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.grid{
-  display:grid;
-  gap:20px;
+/* ROI */
+.roi {
+    text-align: center;
+    font-size: 1.3rem;
+    background: #22c55e;
+    color: #000;
+    padding: 40px;
+    border-radius: 10px;
 }
 
-.grid-3{
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+/* OFFER */
+.offer {
+    text-align: center;
 }
 
-.card{
-  background:#f9fafb;
-  padding:25px;
-  border-radius:10px;
-  border:1px solid #e5e7eb;
+.price {
+    font-size: 2rem;
+    margin: 10px 0;
 }
 
-.pricing{
-  text-align:center;
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid #334155;
 }
 
-.price-card{
-  background:#f9fafb;
-  padding:30px;
-  border-radius:10px;
-  border:1px solid #e5e7eb;
+/* ANIMATION */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
 }
 
-.price{
-  font-size:22px;
-  font-weight:700;
-  margin:15px 0;
-  color:#1e3a8a;
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.cta{
-  text-align:center;
-  padding:70px 20px;
-  background:#1e3a8a;
-  color:white;
-  border-radius:10px;
-}
-
-footer{
-  text-align:center;
-  padding:40px;
-  color:#6b7280;
+/* MOBILE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<header class="container">
-  <div class="logo">
-    <img src="logo.png" alt="Leighton Automation">
-  </div>
+<!-- HERO -->
+<section class="hero container fade">
+    <img src="logo.png" alt="Leighton Automation Logo" style="max-width:180px;margin-bottom:20px;">
+    <h1>Stop Losing Roofing Jobs to Missed Calls</h1>
+    <p>We automatically respond to every missed call, follow up with every lead, and turn more inquiries into booked jobs — without you lifting a finger.</p>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#billing">Billing</a>
-  </nav>
-
-  <a href="https://calendly.com/kylel-leightonautomation/30min" class="btn">Book Call</a>
-</header>
-
-<section id="home" class="hero">
-  <div class="container">
-    <h1>Stop Losing Leads. Start Automating Your Business.</h1>
-    <p>We help small service businesses capture leads, follow up instantly, and automate workflows that increase revenue and efficiency.</p>
-    <a href="https://calendly.com/kylel-leightonautomation/30min" class="btn btn-green">Book Your Free Audit</a>
-  </div>
+    <a href="PASTE STRIPE LINK HERE" class="cta cta-primary">Get More Jobs Now</a>
+    <a href="#calendar" class="cta cta-secondary">Book a Demo</a>
 </section>
 
-<section class="lead-magnet container">
-  
-  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Automation Dashboard">
-
-  <div class="lead-form">
-    <h2>Free Lead Follow-Up Checklist</h2>
-    <p>Enter your email to get the exact system we use to convert more leads automatically.</p>
-    
-    <form onsubmit="handleSubmit(event)">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <button class="btn btn-green" type="submit">Send Me The Checklist</button>
-    </form>
-
-    <p style="font-size:12px;color:#6b7280;margin-top:10px;">
-      No spam. Unsubscribe anytime.
-    </p>
-  </div>
-
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2 style="text-align:center; margin-bottom:20px;">Why Automation Matters</h2>
-    <p style="max-width:900px; margin:auto; color:#4b5563; font-size:18px; line-height:1.6;">
-      Most businesses don’t lose leads because of lack of demand — they lose them because of slow responses, missed messages, and inconsistent follow-up. When a potential customer reaches out, they’re usually comparing multiple options, and the business that responds first and follows up consistently often wins. Without automation, opportunities slip through the cracks, time gets wasted on repetitive tasks, and growth becomes harder to scale. Automation ensures every lead is handled instantly and every process runs smoothly without relying on manual effort.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid grid-3">
-    <div class="card"><h3>Slow Response</h3><p>Leads go cold within minutes.</p></div>
-    <div class="card"><h3>Missed Opportunities</h3><p>Leads slip through the cracks.</p></div>
-    <div class="card"><h3>Manual Work</h3><p>Too much repetitive effort.</p></div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid grid-3">
-    <div class="card"><strong style="color:#166534;">Lead Automation</strong><br>Instant response & follow-up</div>
-    <div class="card"><strong style="color:#166534;">Workflow Automation</strong><br>Onboarding & internal systems</div>
-    <div class="card"><strong style="color:#166534;">Integrations</strong><br>Connect your tools together</div>
-  </div>
-</section>
-
-<section id="pricing" class="section pricing">
-  <div class="container">
-    <h2>Pricing</h2>
-
-    <div class="grid grid-3" style="margin-top:30px;">
-
-      <div class="price-card">
-        <h3>Starter</h3>
-        <div class="price">Setup: $300–$500</div>
-        <p><strong>$75–$100/month</strong></p>
-      </div>
-
-      <div class="price-card">
-        <h3>Growth</h3>
-        <div class="price">Setup: $800–$1,200</div>
-        <p><strong>$150–$200/month</strong></p>
-      </div>
-
-      <div class="price-card">
-        <h3>Full System</h3>
-        <div class="price">Setup: $1,500–$3,000+</div>
-        <p><strong>$250–$400/month</strong></p>
-      </div>
-
+<!-- PROBLEM -->
+<section class="container fade">
+    <h2>The Problem</h2>
+    <div class="grid three">
+        <div class="card">
+            <h3>Missed Calls = Lost Revenue</h3>
+            <p>Every missed call is a job going to your competitor.</p>
+        </div>
+        <div class="card">
+            <h3>Slow Follow-Up Kills Deals</h3>
+            <p>If you don’t respond instantly, someone else will.</p>
+        </div>
+        <div class="card">
+            <h3>Leads Slip Through the Cracks</h3>
+            <p>Manual systems fail. Opportunities get forgotten.</p>
+        </div>
     </div>
-
-    <p style="margin-top:25px; color:#6b7280; max-width:800px; margin-left:auto; margin-right:auto;">
-      Pricing varies based on the complexity of your systems, number of automations, and level of customization required. Every business is different, so final pricing is determined after a quick audit of your processes.
-    </p>
-
-  </div>
 </section>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Us</h2>
-    <p style="margin-top:20px; color:#4b5563; max-width:800px;">
-      Leighton Automation helps small service businesses implement automation systems that improve lead response, streamline operations, and reduce manual workload.
-    </p>
-  </div>
-</section>
-
-<section id="billing" class="section">
-  <div class="container">
-    <h2>Billing & Payments</h2>
-    <p style="margin-top:20px; color:#4b5563;">
-      Payments will be processed securely through Stripe.
-    </p>
-
-    <div style="margin-top:20px;">
-      <a href="#" class="btn">Pay / Subscribe (Coming Soon)</a>
+<!-- SOLUTION -->
+<section class="container fade">
+    <h2>The Solution</h2>
+    <div class="grid three">
+        <div class="card">
+            <h3>Instant Text Back</h3>
+            <p>Every missed call gets an immediate response.</p>
+        </div>
+        <div class="card">
+            <h3>Automated Follow-Up</h3>
+            <p>We nurture leads until they book.</p>
+        </div>
+        <div class="card">
+            <h3>Review Generation</h3>
+            <p>Turn happy customers into 5-star reviews.</p>
+        </div>
     </div>
-  </div>
 </section>
 
-<section class="cta">
-  <h2>Ready to Automate Your Business?</h2>
-  <p>Book a free audit and we’ll identify opportunities to improve your systems.</p>
-  <a href="https://calendly.com/kylel-leightonautomation/30min" class="btn btn-green">Book Your Call</a>
+<!-- ROI -->
+<section class="container fade">
+    <div class="roi">
+        If you miss 10 calls per week and close just 1 extra job at $1,000…<br><br>
+        <strong>That’s $4,000/month recovered.</strong><br><br>
+        This system pays for itself — fast.
+    </div>
 </section>
 
+<!-- HOW IT WORKS -->
+<section class="container fade">
+    <h2>How It Works</h2>
+    <div class="grid three">
+        <div class="card">
+            <h3>1. We Set It Up</h3>
+            <p>Done-for-you system tailored to your business.</p>
+        </div>
+        <div class="card">
+            <h3>2. It Runs Automatically</h3>
+            <p>No extra work. Everything happens in the background.</p>
+        </div>
+        <div class="card">
+            <h3>3. You Close More Jobs</h3>
+            <p>More responses = more booked jobs.</p>
+        </div>
+    </div>
+</section>
+
+<!-- OFFER -->
+<section class="container offer fade">
+    <h2>Simple Pricing</h2>
+    <p class="price">$497 Setup</p>
+    <p class="price">$497 / Month</p>
+    <p>Cancel anytime. No contracts.</p>
+    <p>100% Done-For-You Setup.</p>
+
+    <a href="PASTE STRIPE LINK HERE" class="cta cta-primary">Start Now</a>
+</section>
+
+<!-- CALENDAR -->
+<section id="calendar" class="container fade" style="text-align:center;">
+    <h2>See How Many Jobs You're Losing</h2>
+    <p>Book a quick demo and we’ll show you exactly how this works for your roofing business.</p>
+
+    <div style="min-width:320px;height:700px;">
+        <iframe src="https://calendly.com/kylel-leightonautomation/30min" 
+        width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="container offer fade">
+    <h2>Every Missed Call Is Lost Revenue</h2>
+    <a href="PASTE STRIPE LINK HERE" class="cta cta-primary">Start Getting More Jobs Today</a>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  © 2026 Leighton Automation LLC
+    <p>Leighton Automation LLC</p>
+    <p>kyleL@leightonautomation.com</p>
 </footer>
 
 <script>
-function handleSubmit(e){
-  e.preventDefault();
-  alert("Thanks! We'll connect this to email delivery next.");
-}
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// FADE-IN ON SCROLL
+const faders = document.querySelectorAll('.fade');
+
+const appearOptions = {
+    threshold: 0.2
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+    });
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
 </script>
 
 </body>
