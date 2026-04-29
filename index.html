@@ -8,6 +8,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+:root {
+    --bg-main: #0b0f14;
+    --bg-card: #121821;
+    --border: #1f2a37;
+    --text-main: #ffffff;
+    --text-muted: #aab4c3;
+    --accent: #f97316; /* roofing orange */
+    --accent-dark: #ea580c;
+    --money: #22c55e;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +27,8 @@
 }
 
 body {
-    background: #000;
-    color: #fff;
+    background: radial-gradient(circle at top, #111827, #0b0f14);
+    color: var(--text-main);
     line-height: 1.6;
 }
 
@@ -28,59 +39,65 @@ body {
 }
 
 section {
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 h1, h2, h3 {
     margin-bottom: 20px;
+    letter-spacing: -0.5px;
 }
 
 p {
-    color: #cfcfcf;
+    color: var(--text-muted);
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
 .hero h1 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
+    background: linear-gradient(to right, #fff, #cbd5e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin-bottom: 15px;
 }
 
 /* BUTTONS */
 .cta {
     display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
-    border-radius: 6px;
+    padding: 16px 34px;
+    margin: 12px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+    font-weight: 700;
+    transition: 0.25s ease;
 }
 
 .cta-primary {
-    background: #22c55e;
-    color: #000;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(249,115,22,0.25);
 }
 
 .cta-primary:hover {
-    background: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(249,115,22,0.35);
 }
 
 .cta-secondary {
-    border: 1px solid #444;
+    border: 1px solid var(--border);
     color: #fff;
 }
 
 .cta-secondary:hover {
-    background: #111;
+    background: #111827;
 }
 
 /* GRID */
@@ -94,26 +111,29 @@ p {
 }
 
 .card {
-    background: #0a0a0a;
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #1f1f1f;
+    background: linear-gradient(145deg, #121821, #0f141b);
+    padding: 28px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
     transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    border-color: #333;
+    transform: translateY(-6px);
+    border-color: #2a3a4f;
 }
 
 /* ROI */
 .roi {
     text-align: center;
-    font-size: 1.2rem;
-    background: #22c55e;
-    color: #000;
-    padding: 40px;
-    border-radius: 8px;
+    font-size: 1.25rem;
+    background: linear-gradient(135deg, var(--money), #16a34a);
+    color: #052e16;
+    padding: 45px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(34,197,94,0.25);
 }
 
 /* OFFER */
@@ -122,23 +142,24 @@ p {
 }
 
 .price {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 10px 0;
+    color: var(--accent);
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 40px 0;
-    border-top: 1px solid #1f1f1f;
-    color: #888;
+    padding: 50px 0;
+    border-top: 1px solid var(--border);
+    color: #6b7280;
 }
 
 /* ANIMATION */
 .fade {
     opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
+    transform: translateY(25px);
+    transition: all 0.7s ease;
 }
 
 .fade.show {
@@ -149,7 +170,7 @@ footer {
 /* MOBILE */
 @media (max-width: 600px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
 }
 </style>
@@ -159,24 +180,24 @@ footer {
 
 <!-- HERO -->
 <section class="hero container fade">
-    <img src="logo.png" alt="Leighton Automation Logo" style="max-width:300px;margin-bottom:25px;">
+    <img src="logo.png" alt="Leighton Automation Logo" style="max-width:300px;margin-bottom:25px; filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5));">
 
-    <h1>Most Roofers Lose Jobs They Already Paid For — Just Because They Missed the Call</h1>
+    <h1>Roofers Are Losing $8,000+ Jobs Every Week — Here’s How to Capture Them Automatically</h1>
 
     <p>
-        Homeowners don’t wait. They call multiple roofing companies — and the first one to respond usually wins.
+        Most roofing jobs range from <strong>$6,700 – $12,000+</strong> per project, with many full replacements exceeding $15,000+ depending on size and materials.
     </p>
 
     <p>
-        If you miss the call, you’re not just missing a lead… you’re losing a <strong>$8,000–$15,000+ job</strong> to a faster competitor.
+        Every missed call is not just a lead — it’s a high-ticket job going straight to your competitor.
     </p>
 
     <p>
-        We make sure that never happens.
+        We build automated systems that instantly notify you and send a text or email to new leads the moment they reach out — helping you respond faster and capture more opportunities.
     </p>
 
     <p>
-        <strong>The moment you miss a call, your lead gets a text within 30 seconds — so you stay in the conversation until you call them back.</strong>
+        <strong>No complicated systems. No long-term contracts. Just faster responses to every lead.</strong>
     </p>
 
     <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-primary" target="_blank">
@@ -184,45 +205,41 @@ footer {
     </a>
 
     <p style="font-size:12px; margin-top:15px; max-width:600px; margin-left:auto; margin-right:auto;">
-        By submitting your information, you agree to receive SMS communication from Leighton Automation LLC. 
-        Message & data rates may apply. Message frequency varies. Reply STOP to opt out at any time.
+        By submitting your information, you agree to receive SMS and email communication from Leighton Automation LLC. 
+        Message & data rates may apply. Message frequency varies. Reply STOP to opt out of SMS at any time.
     </p>
 </section>
 
 <!-- PROBLEM -->
 <section class="container fade">
-    <h2>The Reality</h2>
+    <h2>The Problem</h2>
     <div class="grid three">
         <div class="card">
-            <h3>Missed Calls = Lost Jobs</h3>
-            <p>Most homeowners move on immediately if they don’t hear back.</p>
+            <h3>Missed Calls = Lost Revenue</h3>
+            <p>Every missed call is a job going to your competitor.</p>
         </div>
         <div class="card">
-            <h3>Speed Wins</h3>
-            <p>The first roofer to respond has the highest chance of closing.</p>
+            <h3>Speed Wins Jobs</h3>
+            <p>The first roofer to respond usually wins the job.</p>
         </div>
         <div class="card">
-            <h3>You’re Already Paying for These Leads</h3>
-            <p>Ads, SEO, referrals — wasted if you miss the call.</p>
+            <h3>Leads Get Forgotten</h3>
+            <p>Without follow-up, most leads never turn into paying customers.</p>
         </div>
     </div>
 </section>
 
 <!-- SOLUTION -->
 <section class="container fade">
-    <h2>The Fix</h2>
+    <h2>The Solution</h2>
     <div class="grid three">
         <div class="card">
-            <h3>Instant Missed Call Text Back</h3>
-            <p>When you miss a call, a message is sent instantly that sounds like it’s coming directly from you.</p>
+            <h3>Instant Text Back</h3>
+            <p>The moment you miss a call, a text is sent instantly and the lead is captured.</p>
         </div>
         <div class="card">
-            <h3>Stay in the Race</h3>
-            <p>Your lead gets a response immediately — so they don’t move on before you call back.</p>
-        </div>
-        <div class="card">
-            <h3>No Extra Work</h3>
-            <p>You just call them back like normal — we make sure the opportunity doesn’t disappear first.</p>
+            <h3>Instant Lead Response</h3>
+            <p>When a lead fills out your form, you’re notified immediately and they receive an automatic text or email response.</p>
         </div>
     </div>
 </section>
@@ -230,9 +247,9 @@ footer {
 <!-- ROI -->
 <section class="container fade">
     <div class="roi">
-        Miss 10 calls this week…<br><br>
-        If just 1 of those turns into a job at $8,000+…<br><br>
-        <strong>This pays for itself many times over.</strong>
+        If you miss 10 calls per week and close just 1 extra job at $8,000…<br><br>
+        <strong>That could represent tens of thousands in recovered monthly revenue depending on your close rate.</strong><br><br>
+        Most roofing companies see meaningful improvements within the first 30–60 days.
     </div>
 </section>
 
@@ -242,34 +259,34 @@ footer {
     <div class="grid three">
         <div class="card">
             <h3>1. We Set It Up</h3>
-            <p>We handle the setup and make it match your business.</p>
+            <p>We handle the full setup and technical work for you — you’ll just need to create your account, verify a few details, and grant access where needed.</p>
         </div>
         <div class="card">
             <h3>2. It Runs Automatically</h3>
-            <p>Every missed call gets an instant response.</p>
+            <p>No extra work. Everything runs in the background.</p>
         </div>
         <div class="card">
-            <h3>3. You Call Them Back</h3>
-            <p>Now you’re calling a warm lead instead of chasing a lost one.</p>
+            <h3>3. You Close More Jobs</h3>
+            <p>More fast responses = more booked jobs.</p>
         </div>
     </div>
 </section>
 
 <!-- TRUST -->
 <section class="container fade">
-    <h2>Why Roofers Use This</h2>
+    <h2>Why Roofing Companies Choose Us</h2>
     <div class="grid three">
         <div class="card">
-            <h3>Built for Roofing</h3>
-            <p>Designed specifically for high-ticket service businesses.</p>
+            <h3>Built for Roofers</h3>
+            <p>Designed specifically for high-ticket home service businesses.</p>
         </div>
         <div class="card">
-            <h3>Simple & Focused</h3>
-            <p>No complicated systems — just one thing that works.</p>
+            <h3>Done-For-You Setup</h3>
+            <p>We handle the heavy lifting — you just help verify and connect what’s needed.</p>
         </div>
         <div class="card">
             <h3>No Contracts</h3>
-            <p>Stay because it makes you money.</p>
+            <p>Stay because it works — not because you're locked in.</p>
         </div>
     </div>
 </section>
@@ -277,17 +294,30 @@ footer {
 <!-- OFFER -->
 <section class="container offer fade">
     <h2>Simple Pricing</h2>
-    <p><strong>Most roofers make this back with one job.</strong></p>
+    <p><strong>Most roofers recover this cost multiple times over with just 1 job.</strong></p>
     <p class="price">$297 Setup</p>
     <p class="price">$297 / Month</p>
+    <p>Pricing may vary slightly based on complexity.</p>
+    <p>Additional small third-party costs (like phone numbers or SMS usage) may apply depending on your setup and usage.</p>
     <p>Cancel anytime. No contracts.</p>
-    <p>Done-for-you setup.</p>
+    <p>Done-For-You Setup.</p>
 </section>
 
-<!-- CTA -->
+<!-- CALENDAR -->
+<section id="calendar" class="container fade" style="text-align:center;">
+    <h2>See What Each Missed Call Is Costing You</h2>
+    <p>Book a quick free audit and we’ll show you exactly how many jobs you're losing.</p>
+    <p><strong>No pressure — just clarity on your lost revenue.</strong></p>
+
+    <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-secondary" target="_blank">
+        See What Missed Calls Are Costing You
+    </a>
+</section>
+
+<!-- FINAL CTA -->
 <section class="container offer fade">
-    <h2>Every Missed Call Is a Missed Opportunity</h2>
-    <p>If you're missing calls, you're losing jobs — it’s that simple.</p>
+    <h2>Every Missed Call Is Lost Revenue</h2>
+    <p>If you're missing calls, you're losing jobs — it's that simple.</p>
 
     <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-primary" target="_blank">
         See What Missed Calls Are Costing You
@@ -297,6 +327,7 @@ footer {
 <!-- FOOTER -->
 <footer>
     <p>Leighton Automation LLC</p>
+    <p>Reidsville, GA</p>
     <p>KyleL@leightonautomation.com</p>
 
     <p style="margin-top:10px;">
