@@ -14,10 +14,9 @@
     --border: #e5e7eb;
     --text-main: #0f172a;
     --text-muted: #475569;
-    --primary: #1e3a8a; /* deep trust blue */
+    --primary: #1e3a8a;
     --primary-hover: #1e40af;
-    --accent: #16a34a; /* muted money green */
-    --accent-hover: #15803d;
+    --accent: #16a34a;
 }
 
 * {
@@ -59,12 +58,10 @@ p {
 
 .hero h1 {
     font-size: 2.6rem;
-    color: var(--text-main);
 }
 
-.hero p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+.highlight {
+    color: var(--primary);
 }
 
 /* BUTTONS */
@@ -87,16 +84,6 @@ p {
     background: var(--primary-hover);
 }
 
-.cta-secondary {
-    border: 1px solid var(--border);
-    color: var(--text-main);
-    background: #fff;
-}
-
-.cta-secondary:hover {
-    background: #f1f5f9;
-}
-
 /* GRID */
 .grid {
     display: grid;
@@ -112,12 +99,6 @@ p {
     padding: 25px;
     border-radius: 8px;
     border: 1px solid var(--border);
-    transition: 0.25s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    border-color: #cbd5f5;
 }
 
 /* ROI */
@@ -125,20 +106,15 @@ p {
     text-align: center;
     font-size: 1.2rem;
     background: var(--accent);
-    color: #ffffff;
+    color: #fff;
     padding: 40px;
     border-radius: 8px;
     font-weight: 600;
 }
 
-/* OFFER */
-.offer {
-    text-align: center;
-}
-
+/* PRICE */
 .price {
     font-size: 2rem;
-    margin: 10px 0;
     color: var(--primary);
 }
 
@@ -161,13 +137,6 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* MOBILE */
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-}
 </style>
 </head>
 
@@ -175,66 +144,64 @@ footer {
 
 <!-- HERO -->
 <section class="hero container fade">
-    <img src="logo.png" alt="Leighton Automation Logo" style="max-width:300px;margin-bottom:25px;">
+    <img src="logo.png" style="max-width:280px;margin-bottom:25px;">
 
-    <h1>Roofers Are Losing $8,000+ Jobs Every Week — Here’s How to Capture Them Automatically</h1>
+    <h1>
+        Stop Losing <span class="highlight">Paid Roofing Leads</span><br>
+        Every Time You Miss a Call
+    </h1>
 
     <p>
-        Most roofing jobs range from <strong>$6,700 – $12,000+</strong> per project, with many full replacements exceeding $15,000+ depending on size and materials.
+        If someone calls from your Google Ads or website and you don’t answer…
+        <strong>you just paid for that lead — and probably lost it.</strong>
     </p>
 
     <p>
-        Every missed call is not just a lead — it’s a high-ticket job going straight to your competitor.
+        We install a simple system that instantly texts those missed callers back
+        so they don’t move on to the next roofer.
     </p>
 
-    <p>
-        We build automated systems that instantly notify you and send a text or email to new leads the moment they reach out — helping you respond faster and capture more opportunities.
-    </p>
-
-    <p>
-        <strong>No complicated systems. No long-term contracts. Just faster responses to every lead.</strong>
-    </p>
+    <p><strong>No new phone system. No complicated setup.</strong></p>
 
     <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-primary" target="_blank">
         See What Missed Calls Are Costing You
     </a>
-
-    <p style="font-size:12px; margin-top:15px; max-width:600px; margin-left:auto; margin-right:auto;">
-        By submitting your information, you agree to receive SMS and email communication from Leighton Automation LLC. 
-        Message & data rates may apply. Message frequency varies. Reply STOP to opt out of SMS at any time.
-    </p>
 </section>
 
 <!-- PROBLEM -->
 <section class="container fade">
-    <h2>The Problem</h2>
+    <h2>The Real Problem</h2>
     <div class="grid three">
         <div class="card">
-            <h3>Missed Calls = Lost Revenue</h3>
-            <p>Every missed call is a job going to your competitor.</p>
+            <h3>You’re Paying For Calls</h3>
+            <p>Google & Facebook leads cost real money — every call matters.</p>
         </div>
         <div class="card">
-            <h3>Speed Wins Jobs</h3>
-            <p>The first roofer to respond usually wins the job.</p>
+            <h3>Missed = Gone</h3>
+            <p>If you don’t answer, they call the next roofer immediately.</p>
         </div>
         <div class="card">
-            <h3>Leads Get Forgotten</h3>
-            <p>Without follow-up, most leads never turn into paying customers.</p>
+            <h3>No Follow-Up = Lost Job</h3>
+            <p>Most missed calls never get called back fast enough to recover.</p>
         </div>
     </div>
 </section>
 
 <!-- SOLUTION -->
 <section class="container fade">
-    <h2>The Solution</h2>
+    <h2>What We Do</h2>
     <div class="grid three">
         <div class="card">
-            <h3>Instant Text Back</h3>
-            <p>The moment you miss a call, a text is sent instantly and the lead is captured.</p>
+            <h3>Dedicated Tracking Number</h3>
+            <p>Used only for your ads & website so we track real ROI.</p>
         </div>
         <div class="card">
-            <h3>Instant Lead Response</h3>
-            <p>When a lead fills out your form, you’re notified immediately and they receive an automatic text or email response.</p>
+            <h3>Instant Text Back</h3>
+            <p>If you miss the call, they get a message instantly.</p>
+        </div>
+        <div class="card">
+            <h3>Automatic Follow-Up</h3>
+            <p>We keep the conversation alive so you don’t lose the lead.</p>
         </div>
     </div>
 </section>
@@ -242,93 +209,75 @@ footer {
 <!-- ROI -->
 <section class="container fade">
     <div class="roi">
-        If you miss 10 calls per week and close just 1 extra job at $8,000…<br><br>
-        <strong>That could represent tens of thousands in recovered monthly revenue depending on your close rate.</strong><br><br>
-        Most roofing companies see meaningful improvements within the first 30–60 days.
+        If just ONE missed call turns into a $5,000+ job…<br><br>
+        This pays for itself instantly.<br><br>
+        <strong>Everything after that is profit.</strong>
     </div>
 </section>
 
-<!-- HOW IT WORKS -->
+<!-- HOW -->
 <section class="container fade">
     <h2>How It Works</h2>
     <div class="grid three">
         <div class="card">
-            <h3>1. We Set It Up</h3>
-            <p>We handle the full setup and technical work for you — you’ll just need to create your account, verify a few details, and grant access where needed.</p>
+            <h3>1. We Set Everything Up</h3>
+            <p>You don’t touch the tech — we handle it.</p>
         </div>
         <div class="card">
-            <h3>2. It Runs Automatically</h3>
-            <p>No extra work. Everything runs in the background.</p>
+            <h3>2. Calls Forward Normally</h3>
+            <p>Your phone still rings like usual.</p>
         </div>
         <div class="card">
-            <h3>3. You Close More Jobs</h3>
-            <p>More fast responses = more booked jobs.</p>
+            <h3>3. Missed Calls Get Recovered</h3>
+            <p>Instant response keeps the lead from going cold.</p>
         </div>
     </div>
 </section>
 
 <!-- TRUST -->
 <section class="container fade">
-    <h2>Why Roofing Companies Choose Us</h2>
+    <h2>Why Roofers Use This</h2>
     <div class="grid three">
         <div class="card">
-            <h3>Built for Roofers</h3>
-            <p>Designed specifically for high-ticket home service businesses.</p>
+            <h3>Focused on Paid Leads Only</h3>
+            <p>We protect the leads you actually pay for.</p>
         </div>
         <div class="card">
-            <h3>Done-For-You Setup</h3>
-            <p>We handle the heavy lifting — you just help verify and connect what’s needed.</p>
+            <h3>No Disruption</h3>
+            <p>No changing your main number or workflow.</p>
         </div>
         <div class="card">
-            <h3>No Contracts</h3>
-            <p>Stay because it works — not because you're locked in.</p>
+            <h3>Done For You</h3>
+            <p>Set it up once — it runs automatically.</p>
         </div>
     </div>
 </section>
 
-<!-- OFFER -->
-<section class="container offer fade">
+<!-- PRICING -->
+<section class="container fade" style="text-align:center;">
     <h2>Simple Pricing</h2>
-    <p><strong>Most roofers recover this cost multiple times over with just 1 job.</strong></p>
+    <p><strong>Most roofers make this back with one job.</strong></p>
+
     <p class="price">$297 Setup</p>
-    <p class="price">$297 / Month</p>
-    <p>Pricing may vary slightly based on complexity.</p>
-    <p>Additional small third-party costs (like phone numbers or SMS usage) may apply depending on your setup and usage.</p>
-    <p>Cancel anytime. No contracts.</p>
-    <p>Done-For-You Setup.</p>
+    <p class="price">$497 / Month</p>
+
+    <p>Founders pricing — limited spots.</p>
+    <p>No contracts. Cancel anytime.</p>
 </section>
 
-<!-- CALENDAR -->
-<section id="calendar" class="container fade" style="text-align:center;">
-    <h2>See What Each Missed Call Is Costing You</h2>
-    <p>Book a quick free audit and we’ll show you exactly how many jobs you're losing.</p>
-    <p><strong>No pressure — just clarity on your lost revenue.</strong></p>
-
-    <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-secondary" target="_blank">
-        See What Missed Calls Are Costing You
-    </a>
-</section>
-
-<!-- FINAL CTA -->
-<section class="container offer fade">
-    <h2>Every Missed Call Is Lost Revenue</h2>
-    <p>If you're missing calls, you're losing jobs — it's that simple.</p>
+<!-- CTA -->
+<section class="container fade" style="text-align:center;">
+    <h2>See What Your Missed Calls Are Costing You</h2>
 
     <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-primary" target="_blank">
-        See What Missed Calls Are Costing You
+        Book Free Call
     </a>
 </section>
 
 <!-- FOOTER -->
 <footer>
     <p>Leighton Automation LLC</p>
-    <p>Reidsville, GA</p>
     <p>KyleL@leightonautomation.com</p>
-
-    <p style="margin-top:10px;">
-        <a href="/privacy-policy.html" style="color:#64748b;">Privacy Policy</a> | 
-        <a href="/terms-and-conditions.html" style="color:#64748b;">Terms & Conditions</a>
-    </p>
 </footer>
 
 <script>
