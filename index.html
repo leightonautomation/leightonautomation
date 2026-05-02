@@ -5,17 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leighton Automation LLC</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-    --bg-main: #f8fafc;
+    --bg-main: #f4f7fb;
     --bg-card: #ffffff;
     --border: #e5e7eb;
     --text-main: #0f172a;
     --text-muted: #475569;
-    --primary: #1e3a8a;
-    --primary-hover: #1e40af;
+
+    --primary: #0f2a5f;
+    --primary-hover: #1d4ed8;
+
     --accent: #16a34a;
 }
 
@@ -39,11 +41,12 @@ body {
 }
 
 section {
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 h1, h2, h3 {
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 p {
@@ -57,19 +60,26 @@ p {
 }
 
 .hero h1 {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .highlight {
-    color: var(--primary);
+    color: var(--primary-hover);
+}
+
+.subtext {
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 /* BUTTONS */
 .cta {
     display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
-    border-radius: 6px;
+    padding: 15px 32px;
+    margin-top: 20px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.25s;
@@ -87,7 +97,7 @@ p {
 /* GRID */
 .grid {
     display: grid;
-    gap: 30px;
+    gap: 28px;
 }
 
 .three {
@@ -96,19 +106,19 @@ p {
 
 .card {
     background: var(--bg-card);
-    padding: 25px;
-    border-radius: 8px;
+    padding: 28px;
+    border-radius: 10px;
     border: 1px solid var(--border);
 }
 
 /* ROI */
 .roi {
     text-align: center;
-    font-size: 1.2rem;
-    background: var(--accent);
+    font-size: 1.15rem;
+    background: linear-gradient(135deg, #16a34a, #15803d);
     color: #fff;
-    padding: 40px;
-    border-radius: 8px;
+    padding: 45px;
+    border-radius: 12px;
     font-weight: 600;
 }
 
@@ -116,6 +126,7 @@ p {
 .price {
     font-size: 2rem;
     color: var(--primary);
+    font-weight: 700;
 }
 
 /* FOOTER */
@@ -145,22 +156,26 @@ footer {
 
 <!-- HERO -->
 <section class="hero container fade">
-    <img src="logo.png" style="max-width:280px;margin-bottom:25px;">
+
+    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80"
+         style="width:100%;max-width:420px;border-radius:12px;margin-bottom:25px;">
 
     <h1>
         Stop Losing <span class="highlight">Paid Roofing Leads</span><br>
         Every Time You Miss a Call
     </h1>
 
-    <p>
-        If someone calls from your Google Ads or website and you don’t answer, that lead is usually gone within minutes.
+    <p class="subtext">
+        When someone calls from your Google Ads or website, that lead is already paid for.
+        If you miss it, they usually move on within minutes.
     </p>
 
-    <p>
-        We install a simple system that automatically texts missed callers so they stay engaged instead of moving on to another roofer.
+    <p class="subtext">
+        We install a simple system that automatically follows up with missed callers instantly —
+        so you don’t lose high-intent jobs to faster competitors.
     </p>
 
-    <p><strong>No new phone system. No disruption. Just faster follow-up on paid leads.</strong></p>
+    <p><strong>No new phone system. No disruption. Just faster follow-up on the leads you already paid for.</strong></p>
 
     <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-primary" target="_blank">
         See What Missed Calls Are Costing You
@@ -172,15 +187,15 @@ footer {
     <h2>The Real Problem</h2>
     <div class="grid three">
         <div class="card">
-            <h3>You're Paying for These Calls</h3>
-            <p>Google Ads and Facebook Ads cost real money — every missed call is wasted spend.</p>
+            <h3>You Already Paid for These Leads</h3>
+            <p>Every missed call from ads is wasted marketing spend.</p>
         </div>
         <div class="card">
-            <h3>Speed Wins Jobs</h3>
-            <p>The first roofer to respond usually gets the job.</p>
+            <h3>Speed Decides Who Wins</h3>
+            <p>The fastest roofer to respond usually gets the job.</p>
         </div>
         <div class="card">
-            <h3>Missed Leads Go Cold Fast</h3>
+            <h3>Leads Don’t Wait</h3>
             <p>If they don’t hear back quickly, they call the next company immediately.</p>
         </div>
     </div>
@@ -191,16 +206,18 @@ footer {
     <h2>What We Install</h2>
     <div class="grid three">
         <div class="card">
-            <h3>Dedicated Tracking Number</h3>
-            <p>Used for your ads + website so we can track missed calls accurately.</p>
+            <h3>Tracking for Paid Calls</h3>
+            <p>We separate ad & website calls so you can see exactly what’s being missed.</p>
         </div>
+
         <div class="card">
-            <h3>Instant Text Back System</h3>
-            <p>If a call is missed, the lead gets an immediate SMS response.</p>
+            <h3>Instant Missed Call Follow-Up</h3>
+            <p>If you don’t answer, the lead receives an immediate text response.</p>
         </div>
+
         <div class="card">
-            <h3>Automated Follow-Up</h3>
-            <p>Keeps the lead engaged so you don’t lose high-intent opportunities.</p>
+            <h3>Automatic Lead Recovery</h3>
+            <p>Follow-ups keep the conversation alive so leads don’t go cold.</p>
         </div>
     </div>
 </section>
@@ -208,9 +225,9 @@ footer {
 <!-- ROI -->
 <section class="container fade">
     <div class="roi">
-        If just ONE missed call turns into a $5,000–$10,000 roofing job…<br><br>
-        This system pays for itself instantly.<br><br>
-        <strong>Everything after that is recovered revenue.</strong>
+        If just ONE recovered roofing job is worth $5,000–$10,000…<br><br>
+        this system pays for itself immediately.<br><br>
+        <strong>Everything beyond that is recovered revenue you were already losing.</strong>
     </div>
 </section>
 
@@ -218,54 +235,49 @@ footer {
 <section class="container fade">
     <h2>How Setup Works</h2>
     <div class="grid three">
+
         <div class="card">
-            <h3>1. We Build Everything</h3>
-            <p>We set up your entire missed call text-back system inside GoHighLevel.</p>
+            <h3>1. We Build the System</h3>
+            <p>We fully configure your missed call recovery system for your business.</p>
         </div>
 
         <div class="card">
-            <h3>2. You Connect a Few Simple Things</h3>
+            <h3>2. You Connect a Few Basics</h3>
             <p>
-                You’ll just update your website/ads with the tracking number and forward calls.
-                We guide you step-by-step. Most clients finish in 15–30 minutes.
+                You’ll update your website and ad call routing with a new tracking number.
+                We guide you step-by-step — most clients finish in 15–30 minutes.
             </p>
         </div>
 
         <div class="card">
-            <h3>3. Runs Automatically</h3>
+            <h3>3. It Runs Automatically</h3>
             <p>
-                Once connected, missed calls trigger instant SMS follow-ups with no daily work needed.
+                Once connected, missed calls automatically trigger instant follow-ups with no daily work required.
             </p>
         </div>
     </div>
 </section>
 
-<!-- REQUIREMENTS -->
+<!-- TRUST -->
 <section class="container fade">
-    <h2>Important Requirements</h2>
+    <h2>Why Roofing Companies Use This</h2>
     <div class="grid three">
+
         <div class="card">
-            <h3>GoHighLevel Account</h3>
-            <p>
-                Required to send SMS follow-ups and manage automation.
-                We help you set this up if needed.
-            </p>
+            <h3>Built for Paid Leads</h3>
+            <p>Focuses only on high-value ad and website calls.</p>
         </div>
 
         <div class="card">
-            <h3>Business Call Routing</h3>
-            <p>
-                Your ad and website calls will be forwarded through the tracking number we provide.
-            </p>
+            <h3>No Workflow Disruption</h3>
+            <p>Your phone still rings normally — nothing changes for your team.</p>
         </div>
 
         <div class="card">
-            <h3>Simple Compliance Messaging</h3>
-            <p>
-                All SMS follow-ups include opt-out options (STOP/HELP) and are sent only to inbound leads.
-                Customers must consent to receive communication when contacting your business.
-            </p>
+            <h3>Done-For-You Setup</h3>
+            <p>We handle everything — you only connect a few simple pieces.</p>
         </div>
+
     </div>
 </section>
 
@@ -273,10 +285,9 @@ footer {
 <section class="container fade" style="text-align:center;">
     <h2>Simple Pricing</h2>
 
-    <p class="price">$297 Setup</p>
+    <p class="price">$497 Setup</p>
     <p class="price">$497 / Month</p>
 
-    <p>Founders pricing available for a limited number of roofing companies.</p>
     <p>No contracts. Cancel anytime.</p>
 </section>
 
@@ -297,7 +308,8 @@ footer {
     <p>Phone: 912-491-2311</p>
 
     <p style="margin-top:15px;">
-        SMS Disclosure: By submitting your information or contacting us, you agree to receive SMS and email communication from Leighton Automation LLC. Message & data rates may apply. Message frequency varies. Reply STOP to opt out.
+        SMS Disclosure: By contacting us, you agree to receive SMS/email communication from Leighton Automation LLC.
+        Message & data rates may apply. Reply STOP to opt out.
     </p>
 </footer>
 
@@ -306,9 +318,7 @@ const faders = document.querySelectorAll('.fade');
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('show');
     });
 }, { threshold: 0.2 });
 
