@@ -44,12 +44,14 @@ section {
 
 h1, h2, h3 {
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 p {
     color: var(--text-muted);
 }
 
+/* HERO */
 .hero {
     text-align: center;
     padding-top: 100px;
@@ -58,6 +60,7 @@ p {
 .hero h1 {
     font-size: 2.8rem;
     font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .highlight {
@@ -69,6 +72,7 @@ p {
     margin: 0 auto;
 }
 
+/* CTA */
 .cta {
     display: inline-block;
     padding: 15px 32px;
@@ -84,6 +88,7 @@ p {
     background: var(--primary-hover);
 }
 
+/* GRID */
 .grid {
     display: grid;
     gap: 28px;
@@ -100,21 +105,29 @@ p {
     border: 1px solid var(--border);
 }
 
+/* PRICE */
 .price {
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary);
 }
 
+/* DEMO */
 .demo {
     background: #0f172a;
     color: #e2e8f0;
     padding: 30px;
     border-radius: 12px;
-    max-width: 700px;
+    max-width: 750px;
     margin: auto;
 }
 
+.demo p {
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 40px 0;
@@ -131,21 +144,26 @@ footer {
 <section class="hero container">
 
 <h1>
-Improve How You Handle <span class="highlight">Incoming Roofing Calls & Leads</span>
+Missed Call Text-Back System for Roofing Companies
 </h1>
 
 <p class="subtext">
-Most roofing companies lose opportunities not just from missed calls—but from calls that don’t get followed up properly after the first contact.
+We install a simple system that automatically texts missed callers so you can reconnect with leads that didn’t reach you the first time.
 </p>
 
 <p class="subtext">
-We install a simple system that ensures every inbound inquiry gets a second touch so potential customers don’t fall through the cracks.
+If the lead responds, you are instantly notified by text. If they don’t respond, they receive 1–2 follow-up messages to help restart the conversation.
 </p>
 
-<p><strong>Works alongside your current phone system. No disruption to your team or workflow.</strong></p>
+<p class="subtext">
+<strong>
+Uses a dedicated GHL number for tracking. You place it on your website and ads, and we forward calls to your existing business number.
+No porting or conditional call forwarding required.
+</strong>
+</p>
 
 <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta">
-See How This Applies to Your Business
+See If This Fits Your Business
 </a>
 
 </section>
@@ -153,23 +171,23 @@ See How This Applies to Your Business
 <!-- PROBLEM -->
 <section class="container">
 
-<h2>Where Roofing Companies Lose Opportunities</h2>
+<h2>Where Roofing Companies Lose Leads</h2>
 
 <div class="grid three">
 
 <div class="card">
 <h3>Missed Calls</h3>
-<p>Calls come in while you're on jobs or busy with other customers.</p>
+<p>Calls come in while you're on jobs, in meetings, or unavailable.</p>
 </div>
 
 <div class="card">
-<h3>Unconverted Calls</h3>
-<p>Some leads are answered—but never properly followed up afterward.</p>
+<h3>No Immediate Follow-Up</h3>
+<p>Many missed calls are never contacted again.</p>
 </div>
 
 <div class="card">
-<h3>Forgotten Follow-Ups</h3>
-<p>Even good leads can slip away if follow-up doesn't happen fast enough.</p>
+<h3>Leads Go Cold Quickly</h3>
+<p>Most customers move on if they don’t hear back fast.</p>
 </div>
 
 </div>
@@ -178,23 +196,23 @@ See How This Applies to Your Business
 <!-- SOLUTION -->
 <section class="container">
 
-<h2>What This System Does</h2>
+<h2>What We Install</h2>
 
 <div class="grid three">
 
 <div class="card">
-<h3>Captures Every Incoming Call</h3>
-<p>We set up a dedicated number to track and route your inbound calls.</p>
+<h3>Missed Call Text Back</h3>
+<p>Every missed call automatically receives a text message.</p>
 </div>
 
 <div class="card">
-<h3>Instant Follow-Up Messages</h3>
-<p>If a call is missed or not fully handled, the system follows up automatically.</p>
+<h3>Follow-Up Messages</h3>
+<p>If there’s no response, the system sends 1–2 additional follow-ups.</p>
 </div>
 
 <div class="card">
-<h3>Prevents Leads From Going Cold</h3>
-<p>Additional follow-ups help keep conversations active so opportunities don’t disappear.</p>
+<h3>Owner Notification</h3>
+<p>If the lead responds, the business owner is instantly notified via text.</p>
 </div>
 
 </div>
@@ -203,51 +221,44 @@ See How This Applies to Your Business
 <!-- DEMO -->
 <section class="container">
 
-<h2>Example of What Happens</h2>
+<h2>Example Flow</h2>
 
 <div class="demo">
-<p>Incoming Call → No Answer</p>
-<p><strong>System:</strong> “Hey, sorry we missed your call—are you looking for a roofing estimate?”</p>
-<p><strong>Customer:</strong> “Yes, I need a quote.”</p>
-<p><strong>Response:</strong> “Got it—what’s the best address to take a look?”</p>
-<p>→ Conversation continues</p>
-</div>
 
-</section>
+<p><strong>Missed Call →</strong> System sends text</p>
 
-<!-- ROI -->
-<section class="container" style="text-align:center;">
+<p>“Hey, sorry we missed your call—are you looking for a roofing estimate?”</p>
 
-<div style="background: linear-gradient(135deg,#16a34a,#15803d); color:#fff; padding:40px; border-radius:12px; font-weight:600; font-size:1.2rem;">
+<p><strong>Lead:</strong> “Yes I need a quote.”</p>
 
-Even a small number of recovered opportunities each month can outweigh the cost of the system.<br><br>
+<p><strong>System:</strong> Notifies business owner instantly</p>
 
-<strong>It’s designed to help ensure fewer leads are lost after initial contact.</strong>
+<p><strong>If no response:</strong> 1–2 follow-up texts are sent automatically</p>
 
 </div>
 
 </section>
 
-<!-- HOW IT WORKS -->
+<!-- SETUP -->
 <section class="container">
 
-<h2>Simple Setup Process</h2>
+<h2>Setup Process</h2>
 
 <div class="grid three">
 
 <div class="card">
-<h3>1. We Configure Everything</h3>
-<p>We build your system and set up tracking for your inbound calls.</p>
+<h3>1. We Build the System</h3>
+<p>We configure your missed call text-back system inside GoHighLevel.</p>
 </div>
 
 <div class="card">
-<h3>2. You Update One Number</h3>
-<p>You replace your website or ad number with a tracking line (we guide you).</p>
+<h3>2. You Complete Simple Connections</h3>
+<p>You may need to connect accounts, update your website/ads with the new number, or complete basic setup steps we guide you through.</p>
 </div>
 
 <div class="card">
-<h3>3. System Runs Automatically</h3>
-<p>Missed or unconverted calls trigger automatic follow-ups.</p>
+<h3>3. Calls Forward Automatically</h3>
+<p>Your GHL number forwards calls to your existing business line. No need to change truck or business signage numbers.</p>
 </div>
 
 </div>
@@ -256,23 +267,23 @@ Even a small number of recovered opportunities each month can outweigh the cost 
 <!-- TRUST -->
 <section class="container">
 
-<h2>Why Roofing Companies Use This</h2>
+<h2>How This Fits Your Business</h2>
 
 <div class="grid three">
 
 <div class="card">
-<h3>Works With Existing Staff</h3>
-<p>Even if you already answer calls, this ensures nothing gets missed or forgotten.</p>
+<h3>No Number Changes</h3>
+<p>Your current business number stays the same everywhere except your marketing sources.</p>
 </div>
 
 <div class="card">
-<h3>No Workflow Changes</h3>
-<p>Your team continues working exactly the same way.</p>
+<h3>Works With Your Current Setup</h3>
+<p>Designed to run alongside your existing phone system, not replace it.</p>
 </div>
 
 <div class="card">
-<h3>Done-For-You Setup</h3>
-<p>We handle everything so it runs correctly from day one.</p>
+<h3>Simple Automation Layer</h3>
+<p>Adds structured follow-up to missed calls without changing how you operate daily.</p>
 </div>
 
 </div>
@@ -286,14 +297,14 @@ Even a small number of recovered opportunities each month can outweigh the cost 
 <p class="price">$497 Setup</p>
 <p class="price">$497 / Month</p>
 
-<p>If it helps recover even one opportunity, it can justify the cost.</p>
+<p>This covers full system setup, automation configuration, and ongoing management.</p>
 
 </section>
 
 <!-- CTA -->
 <section class="container" style="text-align:center;">
 
-<h2>See If This Fits Your Business</h2>
+<h2>See If This Works for Your Business</h2>
 
 <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta">
 Book a Quick Call
@@ -310,7 +321,7 @@ Book a Quick Call
 <p>Phone: 912-491-2311</p>
 
 <p style="margin-top:15px;">
-SMS Disclosure: By contacting us you agree to receive SMS/email communication. Message & data rates may apply. Reply STOP to opt out.
+SMS Disclosure: By contacting us, you agree to receive SMS/email communication. Message & data rates may apply. Reply STOP to opt out.
 </p>
 
 </footer>
