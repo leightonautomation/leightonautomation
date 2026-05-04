@@ -17,8 +17,6 @@
 
     --primary: #0f2a5f;
     --primary-hover: #1d4ed8;
-
-    --accent: #16a34a;
 }
 
 * {
@@ -46,23 +44,20 @@ section {
 
 h1, h2, h3 {
     margin-bottom: 20px;
-    font-weight: 600;
 }
 
 p {
     color: var(--text-muted);
 }
 
-/* HERO */
 .hero {
     text-align: center;
     padding-top: 100px;
 }
 
 .hero h1 {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
 }
 
 .highlight {
@@ -74,7 +69,6 @@ p {
     margin: 0 auto;
 }
 
-/* BUTTONS */
 .cta {
     display: inline-block;
     padding: 15px 32px;
@@ -82,19 +76,14 @@ p {
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.25s;
-}
-
-.cta-primary {
     background: var(--primary);
     color: #fff;
 }
 
-.cta-primary:hover {
+.cta:hover {
     background: var(--primary-hover);
 }
 
-/* GRID */
 .grid {
     display: grid;
     gap: 28px;
@@ -105,49 +94,33 @@ p {
 }
 
 .card {
-    background: var(--bg-card);
+    background: #fff;
     padding: 28px;
     border-radius: 10px;
     border: 1px solid var(--border);
 }
 
-/* ROI */
-.roi {
-    text-align: center;
-    font-size: 1.15rem;
-    background: linear-gradient(135deg, #16a34a, #15803d);
-    color: #fff;
-    padding: 45px;
-    border-radius: 12px;
-    font-weight: 600;
-}
-
-/* PRICE */
 .price {
     font-size: 2rem;
-    color: var(--primary);
     font-weight: 700;
+    color: var(--primary);
 }
 
-/* FOOTER */
+.demo {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: auto;
+}
+
 footer {
     text-align: center;
     padding: 40px 0;
     border-top: 1px solid var(--border);
-    color: #64748b;
     font-size: 14px;
-}
-
-/* ANIMATION */
-.fade {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
-}
-
-.fade.show {
-    opacity: 1;
-    transform: translateY(0);
+    color: #64748b;
 }
 </style>
 </head>
@@ -155,175 +128,192 @@ footer {
 <body>
 
 <!-- HERO -->
-<section class="hero container fade">
+<section class="hero container">
 
-    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80"
-         style="width:100%;max-width:420px;border-radius:12px;margin-bottom:25px;">
+<h1>
+Improve How You Handle <span class="highlight">Incoming Roofing Calls & Leads</span>
+</h1>
 
-    <h1>
-        Stop Losing <span class="highlight">Paid Roofing Leads</span><br>
-        Every Time You Miss a Call
-    </h1>
+<p class="subtext">
+Most roofing companies lose opportunities not just from missed calls—but from calls that don’t get followed up properly after the first contact.
+</p>
 
-    <p class="subtext">
-        When someone calls from your Google Ads or website, that lead is already paid for.
-        If you miss it, they usually move on within minutes.
-    </p>
+<p class="subtext">
+We install a simple system that ensures every inbound inquiry gets a second touch so potential customers don’t fall through the cracks.
+</p>
 
-    <p class="subtext">
-        We install a simple system that automatically follows up with missed callers instantly —
-        so you don’t lose high-intent jobs to faster competitors.
-    </p>
+<p><strong>Works alongside your current phone system. No disruption to your team or workflow.</strong></p>
 
-    <p><strong>No new phone system. No disruption. Just faster follow-up on the leads you already paid for.</strong></p>
+<a href="https://calendly.com/kylel-leightonautomation/30min" class="cta">
+See How This Applies to Your Business
+</a>
 
-    <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-primary" target="_blank">
-        See What Missed Calls Are Costing You
-    </a>
 </section>
 
 <!-- PROBLEM -->
-<section class="container fade">
-    <h2>The Real Problem</h2>
-    <div class="grid three">
-        <div class="card">
-            <h3>You Already Paid for These Leads</h3>
-            <p>Every missed call from ads is wasted marketing spend.</p>
-        </div>
-        <div class="card">
-            <h3>Speed Decides Who Wins</h3>
-            <p>The fastest roofer to respond usually gets the job.</p>
-        </div>
-        <div class="card">
-            <h3>Leads Don’t Wait</h3>
-            <p>If they don’t hear back quickly, they call the next company immediately.</p>
-        </div>
-    </div>
+<section class="container">
+
+<h2>Where Roofing Companies Lose Opportunities</h2>
+
+<div class="grid three">
+
+<div class="card">
+<h3>Missed Calls</h3>
+<p>Calls come in while you're on jobs or busy with other customers.</p>
+</div>
+
+<div class="card">
+<h3>Unconverted Calls</h3>
+<p>Some leads are answered—but never properly followed up afterward.</p>
+</div>
+
+<div class="card">
+<h3>Forgotten Follow-Ups</h3>
+<p>Even good leads can slip away if follow-up doesn't happen fast enough.</p>
+</div>
+
+</div>
 </section>
 
 <!-- SOLUTION -->
-<section class="container fade">
-    <h2>What We Install</h2>
-    <div class="grid three">
-        <div class="card">
-            <h3>Tracking for Paid Calls</h3>
-            <p>We separate ad & website calls so you can see exactly what’s being missed.</p>
-        </div>
+<section class="container">
 
-        <div class="card">
-            <h3>Instant Missed Call Follow-Up</h3>
-            <p>If you don’t answer, the lead receives an immediate text response.</p>
-        </div>
+<h2>What This System Does</h2>
 
-        <div class="card">
-            <h3>Automatic Lead Recovery</h3>
-            <p>Follow-ups keep the conversation alive so leads don’t go cold.</p>
-        </div>
-    </div>
+<div class="grid three">
+
+<div class="card">
+<h3>Captures Every Incoming Call</h3>
+<p>We set up a dedicated number to track and route your inbound calls.</p>
+</div>
+
+<div class="card">
+<h3>Instant Follow-Up Messages</h3>
+<p>If a call is missed or not fully handled, the system follows up automatically.</p>
+</div>
+
+<div class="card">
+<h3>Prevents Leads From Going Cold</h3>
+<p>Additional follow-ups help keep conversations active so opportunities don’t disappear.</p>
+</div>
+
+</div>
+</section>
+
+<!-- DEMO -->
+<section class="container">
+
+<h2>Example of What Happens</h2>
+
+<div class="demo">
+<p>Incoming Call → No Answer</p>
+<p><strong>System:</strong> “Hey, sorry we missed your call—are you looking for a roofing estimate?”</p>
+<p><strong>Customer:</strong> “Yes, I need a quote.”</p>
+<p><strong>Response:</strong> “Got it—what’s the best address to take a look?”</p>
+<p>→ Conversation continues</p>
+</div>
+
 </section>
 
 <!-- ROI -->
-<section class="container fade">
-    <div class="roi">
-        If just ONE recovered roofing job is worth $5,000–$10,000…<br><br>
-        this system pays for itself immediately.<br><br>
-        <strong>Everything beyond that is recovered revenue you were already losing.</strong>
-    </div>
+<section class="container" style="text-align:center;">
+
+<div style="background: linear-gradient(135deg,#16a34a,#15803d); color:#fff; padding:40px; border-radius:12px; font-weight:600; font-size:1.2rem;">
+
+Even a small number of recovered opportunities each month can outweigh the cost of the system.<br><br>
+
+<strong>It’s designed to help ensure fewer leads are lost after initial contact.</strong>
+
+</div>
+
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="container fade">
-    <h2>How Setup Works</h2>
-    <div class="grid three">
+<section class="container">
 
-        <div class="card">
-            <h3>1. We Build the System</h3>
-            <p>We fully configure your missed call recovery system for your business.</p>
-        </div>
+<h2>Simple Setup Process</h2>
 
-        <div class="card">
-            <h3>2. You Connect a Few Basics</h3>
-            <p>
-                You’ll update your website and ad call routing with a new tracking number.
-                We guide you step-by-step — most clients finish in 15–30 minutes.
-            </p>
-        </div>
+<div class="grid three">
 
-        <div class="card">
-            <h3>3. It Runs Automatically</h3>
-            <p>
-                Once connected, missed calls automatically trigger instant follow-ups with no daily work required.
-            </p>
-        </div>
-    </div>
+<div class="card">
+<h3>1. We Configure Everything</h3>
+<p>We build your system and set up tracking for your inbound calls.</p>
+</div>
+
+<div class="card">
+<h3>2. You Update One Number</h3>
+<p>You replace your website or ad number with a tracking line (we guide you).</p>
+</div>
+
+<div class="card">
+<h3>3. System Runs Automatically</h3>
+<p>Missed or unconverted calls trigger automatic follow-ups.</p>
+</div>
+
+</div>
 </section>
 
 <!-- TRUST -->
-<section class="container fade">
-    <h2>Why Roofing Companies Use This</h2>
-    <div class="grid three">
+<section class="container">
 
-        <div class="card">
-            <h3>Built for Paid Leads</h3>
-            <p>Focuses only on high-value ad and website calls.</p>
-        </div>
+<h2>Why Roofing Companies Use This</h2>
 
-        <div class="card">
-            <h3>No Workflow Disruption</h3>
-            <p>Your phone still rings normally — nothing changes for your team.</p>
-        </div>
+<div class="grid three">
 
-        <div class="card">
-            <h3>Done-For-You Setup</h3>
-            <p>We handle everything — you only connect a few simple pieces.</p>
-        </div>
+<div class="card">
+<h3>Works With Existing Staff</h3>
+<p>Even if you already answer calls, this ensures nothing gets missed or forgotten.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>No Workflow Changes</h3>
+<p>Your team continues working exactly the same way.</p>
+</div>
+
+<div class="card">
+<h3>Done-For-You Setup</h3>
+<p>We handle everything so it runs correctly from day one.</p>
+</div>
+
+</div>
 </section>
 
 <!-- PRICING -->
-<section class="container fade" style="text-align:center;">
-    <h2>Simple Pricing</h2>
+<section class="container" style="text-align:center;">
 
-    <p class="price">$497 Setup</p>
-    <p class="price">$497 / Month</p>
+<h2>Simple Pricing</h2>
 
-    <p>No contracts. Cancel anytime.</p>
+<p class="price">$497 Setup</p>
+<p class="price">$497 / Month</p>
+
+<p>If it helps recover even one opportunity, it can justify the cost.</p>
+
 </section>
 
 <!-- CTA -->
-<section class="container fade" style="text-align:center;">
-    <h2>See What Your Missed Calls Are Costing You</h2>
+<section class="container" style="text-align:center;">
 
-    <a href="https://calendly.com/kylel-leightonautomation/30min" class="cta cta-primary" target="_blank">
-        Book Free Call
-    </a>
+<h2>See If This Fits Your Business</h2>
+
+<a href="https://calendly.com/kylel-leightonautomation/30min" class="cta">
+Book a Quick Call
+</a>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p><strong>Leighton Automation LLC</strong></p>
-    <p>Reidsville, GA</p>
-    <p>Email: KyleL@leightonautomation.com</p>
-    <p>Phone: 912-491-2311</p>
 
-    <p style="margin-top:15px;">
-        SMS Disclosure: By contacting us, you agree to receive SMS/email communication from Leighton Automation LLC.
-        Message & data rates may apply. Reply STOP to opt out.
-    </p>
+<p><strong>Leighton Automation LLC</strong></p>
+<p>Reidsville, GA</p>
+<p>Email: KyleL@leightonautomation.com</p>
+<p>Phone: 912-491-2311</p>
+
+<p style="margin-top:15px;">
+SMS Disclosure: By contacting us you agree to receive SMS/email communication. Message & data rates may apply. Reply STOP to opt out.
+</p>
+
 </footer>
-
-<script>
-const faders = document.querySelectorAll('.fade');
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('show');
-    });
-}, { threshold: 0.2 });
-
-faders.forEach(el => observer.observe(el));
-</script>
 
 </body>
 </html>
