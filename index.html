@@ -1,365 +1,786 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leighton Automation LLC</title>
+
+<title>Leighton Automation | Business Automation Solutions</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+
 <style>
+
 :root {
-    --bg-main: #f4f7fb;
-    --bg-card: #ffffff;
-    --border: #e5e7eb;
-    --text-main: #0f172a;
-    --text-muted: #475569;
 
-    --primary: #0f2a5f;
-    --primary-hover: #1d4ed8;
+--bg-main:#f8fafc;
+--bg-card:#ffffff;
+--border:#e2e8f0;
+
+--text:#0f172a;
+--muted:#475569;
+
+--primary:#0f2a5f;
+--primary-hover:#1d4ed8;
+
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+
 }
 
-body {
-    background: var(--bg-main);
-    color: var(--text-main);
-    line-height: 1.6;
+
+body{
+
+background:var(--bg-main);
+color:var(--text);
+line-height:1.6;
+
 }
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
+
+.container{
+
+width:90%;
+max-width:1150px;
+margin:auto;
+
 }
 
-section {
-    padding: 90px 0;
+
+section{
+
+padding:90px 0;
+
 }
 
-h1, h2, h3 {
-    margin-bottom: 20px;
-    font-weight: 600;
+
+h1,h2,h3{
+
+font-weight:700;
+margin-bottom:20px;
+
 }
 
-p {
-    color: var(--text-muted);
+
+p{
+
+color:var(--muted);
+
 }
+
+
 
 /* HERO */
-.hero {
-    text-align: center;
-    padding-top: 100px;
+
+
+.hero{
+
+text-align:center;
+padding-top:120px;
+
 }
 
-.hero h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+
+.hero h1{
+
+font-size:3.2rem;
+letter-spacing:-1px;
+
 }
 
-.subtext {
-    max-width: 750px;
-    margin: 0 auto;
+
+.hero p{
+
+max-width:750px;
+margin:20px auto;
+
 }
 
-/* CTA */
-.cta {
-    display: inline-block;
-    padding: 15px 32px;
-    margin-top: 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    background: var(--primary);
-    color: #fff;
+
+
+.buttons{
+
+margin-top:35px;
+
 }
 
-.cta:hover {
-    background: var(--primary-hover);
+
+
+.cta{
+
+display:inline-block;
+background:var(--primary);
+color:white;
+
+padding:15px 32px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:600;
+
+margin:8px;
+
 }
+
+
+.cta:hover{
+
+background:var(--primary-hover);
+
+}
+
+
+
+.secondary{
+
+background:white;
+color:var(--primary);
+border:1px solid var(--border);
+
+}
+
+
+
 
 /* GRID */
-.grid {
-    display: grid;
-    gap: 28px;
+
+
+.grid{
+
+display:grid;
+gap:25px;
+
 }
 
-.three {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+
+.three{
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
 }
 
-.card {
-    background: #fff;
-    padding: 28px;
-    border-radius: 10px;
-    border: 1px solid var(--border);
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:12px;
+
+border:1px solid var(--border);
+
 }
 
-/* PRICE */
-.price {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary);
+
+
+/* PROCESS */
+
+
+.number{
+
+font-size:40px;
+font-weight:700;
+color:var(--primary);
+
 }
 
-/* DEMO */
-.demo {
-    background: #0f172a;
-    color: #e2e8f0;
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 750px;
-    margin: auto;
+
+
+/* CTA */
+
+
+.large-cta{
+
+background:#0f172a;
+
+color:white;
+
+text-align:center;
+
+border-radius:15px;
+
+padding:60px 30px;
+
 }
 
-.demo p {
-    margin-bottom: 10px;
-    color: #e2e8f0;
+
+
+.large-cta p{
+
+color:#cbd5e1;
+
+max-width:700px;
+
+margin:auto;
+
 }
+
+
 
 /* FOOTER */
-footer {
-    text-align: center;
-    padding: 40px 0;
-    border-top: 1px solid var(--border);
-    font-size: 14px;
-    color: #64748b;
+
+
+footer{
+
+border-top:1px solid var(--border);
+
+padding:40px 0;
+
+text-align:center;
+
+font-size:14px;
+
 }
+
+
+
 </style>
+
+
 </head>
+
+
 
 <body>
 
+
+
 <!-- HERO -->
+
+
 <section class="hero container">
 
+
 <h1>
-Stop Losing $5,000–$25,000 Roofing Jobs From Missed Calls
+
+Automation That Gives You Time Back
+
 </h1>
 
-<p class="subtext">
-Every missed call from your website, Google Ads, or Facebook Ads is a high-intent homeowner actively looking for a roofing estimate.
-If you don’t answer fast enough, they move on to the next contractor.
+
+<p>
+
+We help small and midsize businesses eliminate repetitive work by implementing reliable automations that save time, reduce mistakes, and keep your business running smoothly.
+
 </p>
 
-<p class="subtext">
-We install a simple missed-call recovery system that automatically texts and follows up with those leads so your business can still close the job—even when you don’t pick up the phone.
+
+<p>
+
+Spend less time managing busywork and more time growing your business.
+
 </p>
 
-<p class="subtext">
-<strong>
-This system uses a dedicated tracking number for your marketing (ads + website only). Calls instantly forward to your existing business line—no porting, no disruption, no change to your current phone setup.
-</strong>
-</p>
 
-<a href="https://calendly.com/kylel-leightonautomation/30min" class="cta">
-See If This Is a Fit
+
+<div class="buttons">
+
+<a class="cta" href="contact.html">
+
+Book a Free Workflow Review
+
 </a>
 
-</section>
 
-<!-- PROBLEM -->
-<section class="container">
+<a class="cta secondary" href="examples.html">
 
-<h2>Where Roofing Companies Are Losing Revenue Every Day</h2>
+See Example Automations
 
-<div class="grid three">
-
-<div class="card">
-<h3>Missed Calls = Lost Roofing Jobs</h3>
-<p>Each missed call from ads or your website can represent a $5,000–$25,000 roofing job that never comes back.</p>
-</div>
-
-<div class="card">
-<h3>Paid Leads Go to Waste</h3>
-<p>You’re already paying for Google and Facebook ads—missed calls mean wasted ad spend and lost revenue.</p>
-</div>
-
-<div class="card">
-<h3>Speed Wins the Job</h3>
-<p>Homeowners typically call 2–3 roofers. The first to respond usually gets the estimate and closes the deal.</p>
-</div>
-
-</div>
-</section>
-
-<!-- REVENUE LEAK -->
-<section class="container">
-
-<h2>The Hidden Revenue Leak Most Roofers Don’t Track</h2>
-
-<div class="grid three">
-
-<div class="card">
-<h3>1 Missed Call</h3>
-<p>Potential $5,000–$25,000 roofing job lost instantly</p>
-</div>
-
-<div class="card">
-<h3>5–10 Missed Calls Weekly</h3>
-<p>Can represent tens of thousands in lost monthly opportunity</p>
-</div>
-
-<div class="card">
-<h3>Ad Spend Inefficiency</h3>
-<p>You pay for every click and call—but only profit from the ones you answer in time</p>
-</div>
-
-</div>
-
-<p style="text-align:center; margin-top:20px; max-width:800px; margin-left:auto; margin-right:auto;">
-This is not about getting more leads. It’s about recovering revenue from the leads you are already generating but not consistently closing.
-</p>
-
-</section>
-
-<!-- SOLUTION -->
-<section class="container">
-
-<h2>What We Install For Your Business</h2>
-
-<div class="grid three">
-
-<div class="card">
-<h3>Instant Missed Call Text Back</h3>
-<p>If you miss a call, the homeowner instantly receives a professional SMS to restart the conversation.</p>
-</div>
-
-<div class="card">
-<h3>Automated Follow-Up System</h3>
-<p>If they don’t respond, the system sends 1–2 additional follow-ups so the lead doesn’t go cold.</p>
-</div>
-
-<div class="card">
-<h3>Instant Lead Alerts</h3>
-<p>When a lead responds, you are immediately notified so you can follow up and close the job quickly.</p>
-</div>
-
-</div>
-</section>
-
-<!-- DEMO -->
-<section class="container">
-
-<h2>How It Works (Real Example)</h2>
-
-<div class="demo">
-
-<p><strong>Missed Call →</strong> Instant text sent to homeowner</p>
-
-<p>“Hey, sorry we missed your call—are you looking for a roofing estimate?”</p>
-
-<p><strong>Homeowner:</strong> “Yes, I need a quote.”</p>
-
-<p><strong>System:</strong> Immediately alerts you to respond</p>
-
-<p><strong>If no response:</strong> Follow-up messages continue automatically</p>
-
-</div>
-
-</section>
-
-<!-- SETUP -->
-<section class="container">
-
-<h2>Simple Setup Process</h2>
-
-<div class="grid three">
-
-<div class="card">
-<h3>1. We Build Everything</h3>
-<p>We configure your missed-call recovery system and tracking number for your marketing channels.</p>
-</div>
-
-<div class="card">
-<h3>2. Quick Connection Steps</h3>
-<p>We guide you through connecting your number and updating your website and ad campaigns with your tracking number.</p>
-</div>
-
-<div class="card">
-<h3>3. You Start Recovering Leads</h3>
-<p>From that point forward, missed calls from ads and website traffic are automatically followed up.</p>
-</div>
-
-</div>
-</section>
-
-<!-- TRUST -->
-<section class="container">
-
-<h2>Built Specifically for Roofing Companies</h2>
-
-<div class="grid three">
-
-<div class="card">
-<h3>No Change to Your Main Number</h3>
-<p>Your existing business number stays active for normal day-to-day operations.</p>
-</div>
-
-<div class="card">
-<h3>Add-On System (Not Replacement)</h3>
-<p>This does not replace your phone system—it adds a revenue recovery layer on top of it.</p>
-</div>
-
-<div class="card">
-<h3>Focused on Revenue Protection</h3>
-<p>Designed to reduce lost opportunities from missed inbound marketing calls.</p>
-</div>
-
-</div>
-</section>
-
-<!-- PRICING -->
-<section class="container" style="text-align:center;">
-
-<h2>Simple Pricing</h2>
-
-<p class="price">$497 Setup</p>
-<p class="price">$497 / Month</p>
-
-<p>This includes full system setup, automation configuration, and ongoing management of your missed-call recovery system.</p>
-
-<p style="margin-top:15px; max-width:700px; margin-left:auto; margin-right:auto;">
-Results depend on your ad volume, lead flow, and response time. This system is designed to help you capture more of the high-intent leads you are already generating—not replace your sales process.
-</p>
-
-</section>
-
-<!-- CTA -->
-<section class="container" style="text-align:center;">
-
-<h2>See If This Makes Sense For Your Roofing Business</h2>
-
-<p class="subtext">
-We only work with a limited number of businesses at a time to ensure proper setup and performance.
-</p>
-
-<a href="https://calendly.com/kylel-leightonautomation/30min" class="cta">
-Book a Quick Call
 </a>
 
+</div>
+
+
 </section>
 
-<!-- FOOTER -->
+
+
+
+
+<!-- SERVICES -->
+
+
+<section class="container">
+
+
+<h2>
+
+Automation Solutions
+
+</h2>
+
+
+<p>
+
+Every business has repetitive tasks slowing growth. We design practical automation systems around the way your company already operates.
+
+</p>
+
+
+
+<div class="grid three">
+
+
+<div class="card">
+
+<h3>Lead Management</h3>
+
+<p>
+
+Lead capture, routing, automated follow-up, CRM updates, and sales workflow improvements.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Customer Communication</h3>
+
+<p>
+
+Appointment reminders, review requests, customer notifications, and email automation.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Internal Operations</h3>
+
+<p>
+
+Employee onboarding, task creation, approval workflows, KPI reporting, and process tracking.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Administrative Work</h3>
+
+<p>
+
+Form processing, invoice notifications, document organization, and spreadsheet automation.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>AI Workflows</h3>
+
+<p>
+
+AI-powered email summaries, document extraction, meeting notes, drafting, and data organization.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Custom Automation</h3>
+
+<p>
+
+If your business has a repetitive process, we can help identify a simpler way to run it.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- PROCESS -->
+
+
+<section class="container">
+
+
+<h2>
+
+How We Work
+
+</h2>
+
+
+
+<div class="grid three">
+
+
+
+<div class="card">
+
+<div class="number">1</div>
+
+<h3>
+
+Understand Your Business
+
+</h3>
+
+
+<p>
+
+We learn how your team currently operates and identify repetitive tasks that create wasted time.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="number">2</div>
+
+<h3>
+
+Build Your Automation
+
+</h3>
+
+
+<p>
+
+We implement reliable workflows using platforms like Zapier, Make, Google Workspace, Microsoft 365, and AI tools.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<div class="number">3</div>
+
+<h3>
+
+Launch & Support
+
+</h3>
+
+
+<p>
+
+After testing, your automation runs in the background while you focus on higher-value work.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- DIFFERENTIATION -->
+
+
+<section class="container">
+
+
+<h2>
+
+Why Leighton Automation
+
+</h2>
+
+
+
+<div class="grid three">
+
+
+<div class="card">
+
+<h3>
+
+Practical Automation
+
+</h3>
+
+<p>
+
+We focus on solving real business problems instead of adding unnecessary complexity.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+
+Proven Platforms
+
+</h3>
+
+<p>
+
+Your workflows are built using reliable tools trusted by businesses worldwide.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+
+Built Around Your Business
+
+</h3>
+
+<p>
+
+We customize proven automation systems to match your existing processes and reduce implementation time.
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- INDUSTRIES -->
+
+
+<section class="container">
+
+
+<h2>
+
+Industries We Serve
+
+</h2>
+
+
+
+<div class="grid three">
+
+
+<div class="card">
+
+<h3>Contractors</h3>
+
+<p>HVAC, plumbing, electrical, roofing, and construction companies.</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Professional Services</h3>
+
+<p>Consultants, agencies, offices, and service providers.</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Small Businesses</h3>
+
+<p>Companies looking to reduce manual work and improve efficiency.</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ABOUT PREVIEW -->
+
+
+<section class="container">
+
+
+<div class="large-cta">
+
+
+<h2>
+
+Built From Real Operations Experience
+
+</h2>
+
+
+<p>
+
+Leighton Automation was founded with a simple goal: help businesses save time by eliminating repetitive work.
+
+With a background in operations management and process improvement, we understand how small inefficiencies add up.
+
+</p>
+
+
+<br>
+
+
+<a class="cta" href="about.html">
+
+Learn More About Us
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FINAL CTA -->
+
+
+<section class="container">
+
+
+<div class="large-cta">
+
+
+<h2>
+
+Ready To Find Your Biggest Time Wasters?
+
+</h2>
+
+
+<p>
+
+Schedule a free workflow review and discover which processes in your business could be automated.
+
+</p>
+
+
+<br>
+
+
+<a class="cta" href="contact.html">
+
+Book Your Workflow Review
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
 <footer>
 
-<p><strong>Leighton Automation LLC</strong></p>
-<p>Reidsville, GA</p>
-<p>Email: KyleL@leightonautomation.com</p>
-<p>Phone: 912-491-2311</p>
 
-<p style="margin-top:15px;">
-SMS Disclosure: By contacting us, you agree to receive SMS/email communication. Message & data rates may apply. Reply STOP to opt out.
+<p><strong>Leighton Automation LLC</strong></p>
+
+<p>Practical Automation. Reliable Systems. More Time For What Matters.</p>
+
+<p>Reidsville, Georgia</p>
+
+<p>Email: KyleL@leightonautomation.com</p>
+
+
+<p style="margin-top:20px;">
+
+SMS Disclosure: By contacting us, you agree to receive SMS/email communication. Message and data rates may apply. Reply STOP to opt out.
+
 </p>
+
 
 </footer>
 
-</body>
-</html>
 
+
+</body>
+
+</html>
